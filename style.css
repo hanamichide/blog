@@ -266,6 +266,11 @@ button{
             font-size: 20px;
         }
         
+        .menu{
+            display: none;
+            
+        }
+
         .sign-in{
             display:flex;
             padding-right: 5%;
