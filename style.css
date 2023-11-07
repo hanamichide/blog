@@ -21,13 +21,13 @@
 }
 
 .logo {
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-left: 1%;
+    padding-top: 1%;
 }
 
 .menu{
-    padding-right: 5%;
-    padding-top: 5%;
+    padding-right: 1%;
+    padding-top: 1%;
 }
 
 .posts, .login, .sign-in{
@@ -117,30 +117,35 @@ button{
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .sign-in{
         display:flex;
         padding-right: 5%;
-        padding-top: 5%;
+        padding-top: 1%;
+        
         
         
     }
 
     .login{
         display: flex;
-        padding-top: 5%;
+        padding-top: 1%;
+        
+        
         
     }
     
     .posts{
         display: flex;
-        padding-top: 5%;
+        padding-top: 1%;
         padding-left: 400px;
+        
+        
     }
 
     .logo {
         padding-left: 3%;
-        padding-top: 5%;
+        padding-top: 1%;
         font-weight: bold;
         font-size: 25px;
     }
@@ -179,12 +184,18 @@ button{
         width: 48%;
     }
 
+    .first-section{
+        
+        height: 850px;
+        
+    }
+
     
    
 }
 
 /*Desktop*/
-@media only screen and (min-width: 1252px) {
+@media screen and (min-width: 1252px) {
 
     .logo {
         padding-left: 1%;
@@ -204,6 +215,7 @@ button{
         padding-top: 1%;
         font-size: 15px;
         font-weight: none;
+        justify-content: space-between;
         
         
     }
@@ -213,7 +225,7 @@ button{
         padding-top: 1%;
         font-size: 15px;
         font-weight: none;
-        
+        justify-content: space-between;
     }
     
     .posts{
@@ -222,15 +234,21 @@ button{
         padding-left: 87%;
         font-size: 15px;
         font-weight: none;
+        justify-content: space-between;
     }
 
     .first-section{
         height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        
         
     }
     
     .first-title{
-        font-size: 50px;
+        
         color: #e2e8f0;
         padding-right: 77%;
         
@@ -241,14 +259,14 @@ button{
         font-size: 15px;
         color: #e2e8f0;
         letter-spacing: 15px;
-        padding-right: 73%;
+        padding-right: 63%;
     }
     
     button{
         width: 15%;
         font-size: 15px;
         position: relative;
-        right: 39%;
+        right: 38%;
         }
 
     .second-section{
@@ -269,5 +287,6 @@ button{
         
     
     }
+
 
 }
