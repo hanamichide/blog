@@ -59,16 +59,13 @@
 }
 
 button{
-    width: 85%;
+    
     background-color: #7c3aed;
     border-radius: 20px;
     color: #e2e8f0;
     margin-top: 25px;
     border: none;
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 4px 130px;
     font-weight: bold;
     
 }
@@ -77,11 +74,7 @@ button{
     background-color: #7c3aed;
     border-radius: 20px;
     border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 50%;
+    padding: 4px 60px;
 
 }
 
@@ -155,7 +148,7 @@ button{
     }
     
     button{
-        width: 70%;
+        padding: 4px 200px;
     }
 
     .post{
@@ -214,9 +207,8 @@ button{
     }
 
     button{
-        width: 23%;
+        padding: 4px 80px;
         margin-left: 6%;
-        font-size: 10px;
     }
 
     .second-section{
