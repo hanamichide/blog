@@ -3,6 +3,42 @@
     margin: 0;
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+.hidden{
+    padding: 15px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@keyframes bounce {
+    
+    97% { transform:translateX(0%); }
+    99% { transform:translateX(+0.5%); }
+    100% { transform:translateX(0); }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0c0a09;
+    transition: width 1s ease;
+    animation: bounce 1s ease-out;
+    z-index: 1;
+    color: #e2e8f0;
+    padding: 15px;
+    overflow: hidden
+}
+
+.none{
+    display: none;
+    
     
 }
 

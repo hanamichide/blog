@@ -12,9 +12,17 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="overlay none" id="overlay">
+            <i onclick="reverseTransition()" class="fa-solid fa-xmark"></i>
+            <ul>
+                <li class="hidden">Post</li>
+                <li class="hidden">Accedi</li>
+                <li class="hidden">Registrati</li>
+            </ul>
+        </div>
         <div class="logo">Logo</div>
         <div class="menu">
-            <i class="fa-solid fa-bars menu"></i>
+            <i onclick="startTransition()" class="fa-solid fa-bars menu"></i>
         </div>
         <div class="posts">Posts</div>
         <div class="login">Accedi</div>
@@ -53,6 +61,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate nibh eget mi lacinia, a sollicitudin nisl consequat. Donec sollicitudin mi vitae lectus aliquam porttitor. Etiam at tristique metus, eu hendrerit dui. Etiam a velit turpis. Nulla egestas diam vitae neque feugiat, non bibendum turpis luctus. Aenean et laoreet magna, a vulputate justo. Aliquam magna ante, posuere et dapibus eu, euismod eget diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam tortor tellus, molestie et feugiat id, lacinia vitae nunc. Curabitur in odio in augue hendrerit euismod non vel ipsum. In in accumsan eros, non porta libero.</p>
             <button class="butt-post">View More</button>
         </div>
+        <script src="jscript.js"></script>
     </section>
 </body>
 </html>
