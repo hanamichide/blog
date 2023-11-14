@@ -8,6 +8,15 @@
 
 .hidden{
     padding: 15px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden.active {
+    opacity: 1;
+    transform: translateX(0);
+    animation: bounce 0.9s ease;
 }
 
 .no-scroll {
@@ -20,10 +29,10 @@
         transform: translateX(0);
     }
     40% {
-        transform: translateX(-10px);
+        transform: translateX(20px);
     }
     60% {
-        transform: translateX(-10px);
+        transform: translateX(10px);
     }
     
 }
