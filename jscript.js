@@ -16,6 +16,7 @@ function startTransition() {
             element.classList.add('active');
         });
     
+        
     }
 }
 
@@ -40,6 +41,7 @@ function reverseTransition() {
         element.classList.remove('active');
     });
     900;
+    
     
 }
 
