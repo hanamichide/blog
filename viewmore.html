@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View-more</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="overlay" id="overlay">
+            <i onclick="reverseTransition()" class="fa-solid fa-xmark hidden"></i>
+            <ul>
+                <li class="hidden">Post</li>
+                <li class="hidden">Accedi</li>
+                <li class="hidden">Registrati</li>
+            </ul>
+        </div>
+        <div class="logo-1 logo" id="logo">Logo</div>
+        <div class="menu">
+            <i onclick="startTransition()" class="fa-solid fa-bars menu"></i>
+        </div>
+        <div class="posts">Posts</div>
+        <div class="login">Accedi</div>
+        <div class="sign-in">Registrati</div>
+    </nav>
+    
+    <script type="module"  src="card.js"></script>
+    <script src="jscript.js" type="module"></script>
+    <script type="module" src="viewmore.js"></script>
+    
+    <div class="view-moreN">
+        <h1 id="title" class="title-vi">
+
+        </h1>
+        <p id="content" class="content-vi">
+
+        </p>
+    </div>
+    
+</body>
+</html>

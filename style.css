@@ -144,15 +144,17 @@ button{
 
 .post{
     border: 1px solid black;
-    padding:  15px;
-    margin-top: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 30px gray; 
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;   
 }
 
 .title-post{
     font-size: 1rem;
-    line-height: 3;
+    line-height: 1.5;
     margin-top: -10px;
 }
 
@@ -160,7 +162,7 @@ button{
     color: grey;
     font-size: smaller;
     display: flex;
-    margin-top: -15px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -181,6 +183,8 @@ button{
 .comments{
     display: flex !important;
     justify-content: space-between !important;
+    margin-top: 15px;
+    
 }
 
 .ex1:hover{
@@ -192,6 +196,7 @@ a:link {
     color: #0c0a09;
     text-decoration: none;
     font-size: 13px;
+    
   }
 
   .fa-message:hover{
@@ -205,7 +210,14 @@ a:link {
    
 }
 
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+.view-moreN{
+    padding: 40px 20px;
+}
 
 
 
@@ -243,7 +255,7 @@ a:link {
     }
 
     .second-section{
-        display: flex;
+        gap: 20px;
         flex-direction: row;
         flex-wrap: wrap;
        
@@ -259,8 +271,18 @@ a:link {
     }
 
     .post{
-        width: 48%;
+        flex-basis: 47%;
+        
     }
+
+    .comments{
+        margin-top: 40px;
+    }
+
+    .view-moreN{
+        padding: 50px 20px;
+    }
+    
 
 }
 
@@ -283,7 +305,7 @@ a:link {
     .logo{
         margin-right: auto;
         padding-top: 0%;
-        padding-left: 2%;
+        padding-left: 1%;
     }
 
     .posts, .login, .sign-in{
@@ -321,17 +343,14 @@ a:link {
     .second-section{
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
     }
 
-    .latest-post{
-        padding-left: 20px;
+    .view-moreN{
+        padding: 60px 20px;
     }
-
-    .post{
-        width: 21%;
-        margin-right: 40px;
-        margin-left: 10px;
-    }
+    
+    
 }
 
 
@@ -341,4 +360,8 @@ a:link {
     .mph{
         display: none!important;
     }
+}
+
+.logo-1{
+cursor: pointer;
 }
