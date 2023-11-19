@@ -12,23 +12,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="overlay" id="overlay">
-            <i onclick="reverseTransition()" class="fa-solid fa-xmark hidden"></i>
-            <ul>
-                <li class="hidden">Post</li>
-                <li class="hidden">Accedi</li>
-                <li class="hidden">Registrati</li>
-            </ul>
-        </div>
-        <div class="logo-1 logo" id="logo">Logo</div>
-        <div class="menu">
-            <i onclick="startTransition()" class="fa-solid fa-bars menu"></i>
-        </div>
-        <div class="posts">Posts</div>
-        <div class="login">Accedi</div>
-        <div class="sign-in">Registrati</div>
-    </nav>
+        <nav class="navbar">
+            <div>
+            <a href="index.html" class="logo" >Logo</a>
+            </div>
+    
+            <div class="menu" id="slide-in">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-right">
+                <div class="ntot-right">Posts</div>
+                <div class="ntot-right">Accedi</div>
+                <div class="ntot-right">Registrati</div>
+            </div>
+        </nav>
     
     <script type="module"  src="card.js"></script>
     <script src="jscript.js" type="module"></script>

@@ -11,23 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body id="body">
     <nav class="navbar">
-        <div class="overlay" id="overlay">
-            <i onclick="reverseTransition()" class="fa-solid fa-xmark hidden"></i>
-            <ul>
-                <li class="hidden">Post</li>
-                <li class="hidden">Accedi</li>
-                <li class="hidden">Registrati</li>
-            </ul>
+        <div>
+            Logo
         </div>
-        <div class="logo">Logo</div>
-        <div class="menu">
-            <i onclick="startTransition()" class="fa-solid fa-bars menu"></i>
+        <div class="menu" id="slide-in">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="posts">Posts</div>
-        <div class="login">Accedi</div>
-        <div class="sign-in">Registrati</div>
+        <div class="nav-right">
+        <div class="ntot-right">Posts</div>
+        <div class="ntot-right">Accedi</div>
+        <div class="ntot-right">Registrati</div>
+        </div>  
     </nav>
     <section>
         <div class="first-section">
@@ -94,6 +90,18 @@
                 <div class="view-more"><a class="ex1" href="default.asp">View More</a></div>
             </div>-->
         </section>
+        <div id="slide">
+            <div id="slide-out">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div>
+                <ul>
+                    <li>Posts</li>
+                    <li>Accedi</li>
+                    <li>Registrati</li>
+                </ul>
+            </div>
+        </div>
         <script type="module"  src="card.js"></script>
         <script src="jscript.js" type="module"></script>
 </body>

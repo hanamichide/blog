@@ -1,50 +1,35 @@
-let isTransitionActive = false;
+function initSlide() {
 
-function startTransition() {
-    let overlay = document.getElementById('overlay');
-    let hiddenElements = document.querySelectorAll('.hidden');
-    overlay.classList.add("active");
-    let body = document.body;
-   
-    if (!isTransitionActive) {
-        
-        let maxWidth = window.innerWidth;
-        overlay.style.width = maxWidth + 'px';
-        body.classList.add('no-scroll');
-        isTransitionActive = true;
-        hiddenElements.forEach(element => {
-            element.classList.add('active');
-        });
-    
-        
+    const elemSlideIn = document.getElementById("slide-in");
+    const elemSlideOut = document.getElementById("slide-out");
+
+    if (elemSlideIn === null || elemSlideOut === null) {
+        return;
     }
+    elemSlideIn.addEventListener("click", moveIn);
+
+    elemSlideOut.addEventListener("click", moveOut);
+
+    const slide = document.getElementById("slide");
+    const body = document.getElementById("body");
+
+    function moveIn() {
+        slide.classList.add("left");
+        body.classList.add("no-scroll");
+    };
+
+    function moveOut() {
+        slide.classList.remove("left");
+        setTimeout(function () { body.classList.remove("no-scroll"); }, 2000);
+    };
+
 }
 
 
-function reverseTransition() {
-    let overlay = document.getElementById('overlay');
-    let hiddenElements = document.querySelectorAll('.hidden');
-        let body = document.body;
-    
 
-    if (isTransitionActive) {
-        
-        overlay.style.width = '0';
-        ;
-        isTransitionActive = false;
-    }
-    setTimeout(function(){
-        overlay.classList.remove("active");
-        body.classList.remove('no-scroll')
-    },900);
-
-    hiddenElements.forEach(element => {
-        element.classList.remove('active');
-    });
-    900;
-    
-    
-};
+document.addEventListener("DOMContentLoaded", function () {
+    initSlide();  
+});
 
 
 import {posts} from './card.js';
@@ -73,11 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
  
  function printPost (data) {
     const post = document.createElement("div");
-    
+    post.classList.add("post")
    
        post.innerHTML =
        `
-       <div class="post">
         <h6  class="title-post">
            ${data.title}
         </h6>
@@ -92,26 +76,9 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="comments">
         <div class="mph"><i class="fa-regular fa-message mp"></i>3</div>
            <div class="view-more"><a class="ex1" href="viewmore.html?id=${data.id}" id="viewmore">View More</a></div>
-        </div>
-
-       </div>
-       `
+        `
        return post;
     }
-        
-
-  //tasto indietro Logo//
-    const logoElement = document.getElementById('logo');
-
-if (logoElement) {
-    logoElement.addEventListener('click', function() {
-        window.history.back();
-    });
-} else {
-    
-};
-
-
 
 
 
