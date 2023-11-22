@@ -1,4 +1,4 @@
-export const posts = [
+const posts = [
     {
         id: 0,
         title: 'Exploring the Wonders of Quantum Computing: A Journey into the Future',
@@ -88,6 +88,3 @@ export const posts = [
         ]
     }
 ];
-
-
-   

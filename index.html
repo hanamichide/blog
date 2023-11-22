@@ -1,108 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+   <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body id="body">
     <nav class="navbar">
         <div>
             Logo
         </div>
+
         <div class="menu" id="slide-in">
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="nav-right">
-        <div class="ntot-right">Posts</div>
-        <div class="ntot-right">Accedi</div>
-        <div class="ntot-right">Registrati</div>
-        </div>  
+            <div class="mtop-right">Posts</div>
+            <div class="mtop-right">Accedi</div>
+            <div class="mtop-right">Registrati</div>
+        </div>
     </nav>
-    <section>
-        <div class="first-section">
-        <div class="first-title">
-            Look at the <span class="blog">Blog</span>!
-        </div>
-        <div class="second-title">My super fantastic Blog</div>
-        <button>Get more</button>
-        </div>
-    </section>
-        <div>
-            <h5 class="latest-post">Latest posts</h5>
-        </div>
-        <section  class="second-section" id="second-section">
-            <!--<div class="post">
-            <h6 class="title-post">Post 1</h6>
-            <span class="post-date">Pubblicato il: 01/03/2024</span>
-            <p>Paragrafo super interessante inerente a qualsiasi cosa che potresti scrivere sul tuo blog</p>
-            <div class="category">
-                <div class="first-cat">Tech</div>
-                <div class="second-cat">Sport</div>
+
+    <main>
+        <section class="first-section">
+            <div class="w-40">
+                <div class="jumbo">
+                    <div class="first-title">
+                        Look at the <span class="blog">Blog</span>!
+                    </div>
+
+                    <div class="second-title">
+                        My super fantastic Blog
+                    </div>
+
+                    <button class="butt-jumbo button button">Get more</button>
+                </div>
             </div>
-            <div class="comments">
-                <div class="mph"><i class="fa-regular fa-message mp"></i>3</div>
-                <div class="view-more"><a class="ex1" href="default.asp">View More</a></div>
+
+
+            <div class="tron">
+
             </div>
-            </div>
-        <div class="post">
-            <h6 class="title-post">Post 2</h6>
-            <span class="post-date">Pubblicato il: 01/03/2024</span>
-            <p>Paragrafo super interessante inerente a qualsiasi cosa che potresti scrivere sul tuo blog</p>
-            <div class="category">
-                <div class="first-cat">Tech</div>
-                <div class="second-cat">Sport</div>
-            </div>
-            <div class="comments">
-                <div class="mph"><i class="fa-regular fa-message mp"></i>3</div>
-                <div class="view-more"><a class="ex1" href="default.asp">View More</a></div>
-            </div>
-            </div>
-        <div class="post">
-            <h6 class="title-post">Post 3</h6>
-            <span class="post-date">Pubblicato il: 01/03/2024</span>
-            <p>Paragrafo super interessante inerente a qualsiasi cosa che potresti scrivere sul tuo blog</p>
-            <div class="category">
-                <div class="first-cat">Tech</div>
-                <div class="second-cat">Sport</div>
-            </div>
-            <div class="comments">
-                <div class="mph"><i class="fa-regular fa-message mp"></i>3</div>
-                <div class="view-more"><a class="ex1" href="default.asp">View More</a></div>
-            </div>
-            </div>
-        <div class="post">
-            <h6 class="title-post">Post 4</h6>
-            <span class="post-date">Pubblicato il: 01/03/2024</span>
-            <p>Paragrafo super interessante inerente a qualsiasi cosa che potresti scrivere sul tuo blog</p>
-            <div class="category">
-                <div class="first-cat">Tech</div>
-                <div class="second-cat">Sport</div>
-            </div>
-            <div class="comments">
-                <div class="mph"><i class="fa-regular fa-message mp"></i>3</div>
-                <div class="view-more"><a class="ex1" href="default.asp">View More</a></div>
-            </div>-->
+
         </section>
-        <div id="slide">
-            <div id="slide-out">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div>
-                <ul>
-                    <li>Posts</li>
-                    <li>Accedi</li>
-                    <li>Registrati</li>
-                </ul>
-            </div>
+
+        <h4>
+            Latest posts
+        </h4>
+
+        <section class="second-section" id="section-posts">
+
+        </section>
+    </main>
+
+    <div id="slide">
+        <div id="slide-out" class="opacity-0">
+            <i class="fa-solid fa-xmark"></i>
         </div>
-        <script type="module"  src="card.js"></script>
-        <script src="jscript.js" type="module"></script>
+        <div class="opacity-0">
+            <ul>
+                <li>Posts</li>
+                <li>Accedi</li>
+                <li>Registrati</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+
+    <script type="text/javascript" src="moc.js" type="module"></script>
+    <script type="text/javascript" src="main.js" type="module"></script>
 </body>
+
 </html>

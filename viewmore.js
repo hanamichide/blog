@@ -1,5 +1,3 @@
-import {posts} from './card.js';
-
 function printBody() {
 
     const viewMore = document.getElementById("viewmore");
@@ -34,3 +32,8 @@ function printBody() {
 }
 
 printBody();
+
+
+
+
+
